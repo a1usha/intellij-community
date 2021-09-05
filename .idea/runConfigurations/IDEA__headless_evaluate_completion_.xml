@@ -1,0 +1,24 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="IDEA (headless evaluate-completion)" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <envs>
+      <env name="EVALUATION_PYTHON" value="$PROJECT_DIR$/../stub-eval-project/venv/bin/python" />
+    </envs>
+    <log_file alias="idea.log" path="$PROJECT_DIR$/system/idea/log/idea.log" />
+    <log_file alias="build.log" path="$PROJECT_DIR$/system/idea/log/build-log/build.log" />
+    <option name="MAIN_CLASS_NAME" value="com.intellij.idea.Main" />
+    <module name="intellij.idea.ultimate.main" />
+    <option name="PASS_PARENT_ENVS" value="false" />
+    <option name="PROGRAM_PARAMETERS" value="evaluate-completion full ../completionPluginEnv/completionPluginConfig.json" />
+    <shortenClasspath name="ARGS_FILE" />
+    <option name="VM_PARAMETERS" value="-Xmx2g -XX:ReservedCodeCacheSize=240m -XX:+UseG1GC -XX:SoftRefLRUPolicyMSPerMB=50 -XX:MaxJavaStackTraceDepth=10000 -ea -Dsun.io.useCanonCaches=false -Dapple.laf.useScreenMenuBar=true -Dsun.awt.disablegrab=true -Didea.jre.check=true -Didea.is.internal=true -Didea.debug.mode=true -Didea.config.path=../config/idea -Didea.system.path=../system/idea -Djdk.attach.allowAttachSelf -Dfus.internal.test.mode=true -XX:CICompilerCount=2 -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -Didea.initially.ask.config=true -Djava.awt.headless=true" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="debugger-agent" />
+      </option>
+    </method>
+  </configuration>
+</component>
